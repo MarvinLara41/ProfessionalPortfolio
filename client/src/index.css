@@ -1,0 +1,107 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 1.6rem;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Layout */
+.grid-container {
+  font-family: "Megrim", cursive;
+  display: grid;
+  grid-template-areas: "main";
+  grid-template-rows: 1fr;
+  height: 100%;
+}
+
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Landing Screen*/
+.landing {
+  height: 100vh;
+  text-align: center;
+}
+
+.landing .name {
+  font-weight: bolder;
+  font-size: 5rem;
+}
+
+.landing-icons {
+  display: flex;
+  justify-content: center;
+}
+
+/*About Me*/
+.aboutMe {
+  height: 100vh;
+}
+
+.aboutMe-bg h2 {
+  font-size: 9rem;
+  color: #d0d0d0;
+  margin: 2;
+  text-align: center;
+}
+
+.aboutMe-bg p {
+  font-family: "Courier New", Courier, monospace;
+  margin: 5rem;
+}
+
+.me {
+  text-align: center;
+}
+
+/*Projects*/
+.projects {
+  height: 100vh;
+}
+
+.project-list h2 {
+  font-size: 9rem;
+  color: #d0d0d0;
+  margin: 2;
+  text-align: center;
+}
+
+.project-list h5 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.project-list li {
+  list-style: none;
+  border-bottom: solid 1px;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
+.project-list li:hover {
+  border-style: solid;
+  border-color: #d0d0d0;
+  transition: all 0.3s ease-in-out;
+}
