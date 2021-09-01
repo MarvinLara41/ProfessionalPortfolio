@@ -8,19 +8,18 @@ export default function AboutMe() {
         <div className="me">
           <p>
             On a Friday night during the Spring of 2019 I fell into the wormhole
-            on Youtube and discovered a basic html and css course on accident.
-            It's safe to say the rest is history. I immersed myself into the
-            topic and continued to discover the capabilities of what can be
-            created with programming and design frameworks. From creating
-            beautiful interactive designs to creating functionalities that help
-            people resolve problems, the possibilities and routes of this field
-            captured my imagination and curiosity.
+            on Youtube and discovered a basic html and css course on accident. I
+            immersed myself into the topic and continued to discover the
+            capabilities of what can be created with programming and design
+            frameworks. From creating beautiful interactive designs to creating
+            functionalities that help people resolve problems, the possibilities
+            and routes of this field captured my imagination and curiosity.
             <br />
             <br />
             Soon after the completion of that course I enrolled into Rutgers
             University's Coding BootCamp and completed their course in December
-            2019. I am an eager and ambitious individual that is looking to
-            contribute to an amazing team!
+            2019. Since then I continued to expand my knowledge and practice my
+            skills to contribute to an amazing team!
           </p>
         </div>
       </div>

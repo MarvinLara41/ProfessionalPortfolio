@@ -12,10 +12,12 @@ import "animate.css";
 export default function LandingScreen() {
   return (
     <div className="landing">
-      <div className="name animate__animated animate__fadeIn  animate__delay-1s">
+      <div className="name animate__animated animate__fadeIn  animate__delay-0.5s">
+        <div className="lightbar"></div>
         <h1>Marvin Lara</h1>
         <h4>Full Stack Developer</h4>
       </div>
+
       <div className="landing-icons">
         <FontAwesomeIcon
           icon={faReact}

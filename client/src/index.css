@@ -10,6 +10,7 @@ body {
   height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #90b899;
 }
 
 #root {
@@ -36,8 +37,9 @@ a {
 
 a:hover {
   cursor: pointer;
-  font-size: 2rem;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: bold;
+  color: #e9dea1;
 }
 
 /* Landing Screen*/
@@ -46,35 +48,70 @@ a:hover {
   text-align: center;
 }
 
-.landing .name {
-  font-weight: bolder;
-  font-size: 5rem;
+.name {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  text-shadow: 0 0 10px #e9dea1, 0 0 20px #e9dea1, 0 0 40px #e9dea1,
+    0 0 80px #e9dea1, 0 0 120px #e9dea1;
+}
+
+.lightbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5rem;
+  height: 100%;
+  border-radius: 1rem;
+  background: #fff;
+  z-index: 2;
+  box-shadow: 0 0 10px #e9dea1, 0 0 20px #e9dea1, 0 0 40px #e9dea1,
+    0 0 80px #e9dea1, 0 0 120px #e9dea1;
+  animation: animateLightbar 7s linear;
+}
+
+@keyframes animateLightbar {
+  0%,
+  5% {
+    transform: scaleY(0) translateX(0);
+  }
+  10% {
+    transform: scaleY(1) translateX(0);
+  }
+  90% {
+    transform: scaleY(1) translateX(calc(160rem));
+  }
 }
 
 .landing-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 8rem;
 }
 
 /*About Me*/
 .aboutMe {
   height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .aboutMe-bg h2 {
-  font-size: 9rem;
-  color: #d0d0d0;
+  font-size: 7rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  text-shadow: 0 0 10px #e9dea1, 0 0 20px #e9dea1, 0 0 40px #e9dea1,
+    0 0 80px #e9dea1, 0 0 120px #e9dea1;
   margin: 2;
-  text-align: center;
 }
 
 .aboutMe-bg p {
   font-family: "Courier New", Courier, monospace;
-  margin: 5rem;
 }
 
 .me {
-  text-align: center;
+  max-width: 80rem;
 }
 
 /*Projects*/
@@ -83,8 +120,11 @@ a:hover {
 }
 
 .project-list h2 {
-  font-size: 9rem;
-  color: #d0d0d0;
+  font-size: 7rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  text-shadow: 0 0 10px #e9dea1, 0 0 20px #e9dea1, 0 0 40px #e9dea1,
+    0 0 80px #e9dea1, 0 0 120px #e9dea1;
   margin: 2;
   text-align: center;
 }
@@ -96,12 +136,21 @@ a:hover {
 .project-list li {
   list-style: none;
   border-bottom: solid 1px;
+  border-radius: 7rem;
   margin: 2rem;
   border-radius: 1rem;
 }
 
 .project-list li:hover {
   border-style: solid;
-  border-color: #d0d0d0;
-  transition: all 0.3s ease-in-out;
+  border-color: #e9dea1;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.project-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
